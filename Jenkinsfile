@@ -23,7 +23,7 @@ node {
     }
 
     stage('Build Docker Image') {
-        buildImage = docker.build("codebongbong/spring-cloud-config:${commitHash}")
+        buildImage = docker.build("CodeBongBong/spring-cloud-config:${commitHash}")
     }
 
     stage('Archive') {
